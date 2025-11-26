@@ -39,3 +39,46 @@ select
 from 
   CITY;
 
+--Query all attributes of every Japanese city in the CITY table. The COUNTRYCODE for Japan is JPN.
+SELECT 
+  * 
+FROM 
+  CITY 
+where 
+  COUNTRYCODE = "JPN";
+
+--Query the names of all the Japanese cities in the CITY table. The COUNTRYCODE for Japan is JPN.
+
+SELECT 
+  NAME
+FROM 
+  CITY 
+where 
+  COUNTRYCODE = "JPN";
+
+--Query a list of CITY and STATE from the STATION table.
+
+SELECT 
+  city, 
+  state 
+FROM 
+  STATION;
+
+-- Query a list of CITY names from STATION for cities that have an even ID number. Print the results in
+
+SELECT 
+  city
+FROM 
+  STATION;
+
+--Query a list of CITY names from STATION for cities that have an even ID number. Print the results in any order, but exclude duplicates from the answer.
+
+SELECT 
+  distinct city 
+FROM 
+  STATION 
+WHERE 
+  MOD(ID, 2) = 0;
+
+
+--MOD(ID, 2) = 0 → selects rows where ID is even, DISTINCT → removes duplicate city names AND No ORDER BY needed (HackerRank allows any order unless specified)
