@@ -1,0 +1,10 @@
+When to Use SQL INNER JOIN and OUTER JOIN
+INNER JOIN and OUTER JOIN also differ in their practical use cases in data retrieval.
+
+When to use INNER JOIN
+INNER JOIN is most effective when you need only the intersecting data from two tables.
+For example, you may use INNER JOIN when analyzing sales data to find products that have been sold, such as when both product and sales tables have matching entries.
+
+When to use OUTER JOIN
+OUTER JOIN is appropriate when you need to return a complete dataset, including unmatched rows. For example,
+when generating a report to show all employees, including those without a department assignment, or all departments, including those without employees.
