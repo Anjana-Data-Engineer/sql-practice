@@ -1,0 +1,10 @@
+Window Functions in SQL
+
+SQL window functions allow performing calculations across a set of rows that are related to the current row, without collapsing the result into a single value.
+They are commonly used for tasks like aggregates, rankings and running totals.
+
+The OVER clause defines the “window” of rows for the calculation. It can:
+
+PARTITION BY: divide the data into groups.
+ORDER BY: specify the order of rows within each group.
+Unlike an aggregate function, a window function does not group rows into one single row. 
